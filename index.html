@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="text-center mb-5">
+        <h3>SIGN UP USER ACCOUNT</h3>
+        <p>Fill all the fields to continue</p>
+      </div>
+      <div class="progress px-1" style="height: 3px">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 0%"
+          aria-valuenow="0"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <div class="step-container d-flex justify-content-between">
+        <div class="step-circle" onclick="displayStep(1)">1</div>
+        <div class="step-circle" onclick="displayStep(2)">2</div>
+        <div class="step-circle" onclick="displayStep(3)">3</div>
+      </div>
+
+      <form id="multi-step-form">
+        <div class="step step-1">
+          <!-- Step 1 form fields here -->
+          <h3 class="mb-3">Personal Data</h3>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">First Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="field1"
+                  name="field1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Last Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="field1"
+                  name="field1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Middle Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="field1"
+                  name="field1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Date of Birth:</label>
+                <input type="date" class="form-control" id="field1" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Place of Birth:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="field1"
+                  name="field1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Civil Status</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option disabled selected>-- Select --</option>
+                  <option value="1">Single</option>
+                  <option value="2">Married</option>
+                  <option value="3">Widowed</option>
+                  <option value="3">Divored</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Citizenship:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="field1"
+                  name="field1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Religion:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="field1"
+                  name="field1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-primary next-step" onclick="displayStep(2)">
+              Next
+            </button>
+          </div>
+        </div>
+
+        <div class="step step-2">
+          <!-- Step 2 form fields here -->
+          <h3 class="mb-3">Contact Details</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Email Address:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="field1"
+                  name="field1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Phone No:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="field1"
+                  name="field1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Telephone:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="field1"
+                  name="field1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">House No/Street:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="field1"
+                  name="field1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Province</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option disabled selected>-- Select --</option>
+                  <option value="1">NCR, First District</option>
+                  <option value="2">NCR, Second District</option>
+                  <option value="3">NCR, Third District</option>
+                  <option value="3">NCR, Fourth District</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="field1" class="form-label">Municipality</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option disabled selected>-- Select --</option>
+                  <option value="1">City of Mandaluyong</option>
+                  <option value="1">City of Marikina</option>
+                  <option value="1">City of Pasig</option>
+                  <option value="1">Quezon City</option>
+                  <option value="1">City of San Juan</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end gap-2">
+            <button type="button" class="btn btn-primary prev-step" onclick="displayStep(1)">
+              Previous
+            </button>
+            <button type="button" class="btn btn-primary next-step" onclick="displayStep(3)">
+              Next
+            </button>
+          </div>
+        </div>
+
+        <div class="step step-3">
+          <!-- Step 3 form fields here -->
+          <h3 class="mb-3">Other Details</h3>
+          <div class="mb-3">
+            <label for="field3" class="form-label">ID No:</label>
+            <input type="text" class="form-control" id="field1" name="field1" />
+          </div>
+          <div class="mb-3">
+            <label for="field3" class="form-label">ID Picture:</label>
+            <input type="file" class="form-control" aria-label="file example" />
+          </div>
+
+          <div class="d-flex justify-content-end gap-2 mt-3">
+            <button type="button" class="btn btn-primary prev-step" onclick="displayStep(2)">
+              Previous
+            </button>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
